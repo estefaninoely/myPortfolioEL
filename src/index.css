@@ -2,14 +2,221 @@
 @tailwind components;
 @tailwind utilities;
 
+/* inconsolata-200 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../src/fonts/inconsolata-v31-latin/inconsolata-v31-latin-200.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inconsolata-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../src/fonts/inconsolata-v31-latin/inconsolata-v31-latin-300.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inconsolata-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../src/fonts/inconsolata-v31-latin/inconsolata-v31-latin-regular.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inconsolata-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../src/fonts/inconsolata-v31-latin/inconsolata-v31-latin-500.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inconsolata-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../src/fonts/inconsolata-v31-latin/inconsolata-v31-latin-800.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+  font-family: "Cabinet Grotesk";
+  font-weight: 800;
+  src: url("/src/fonts/CabinetGrotesk-Black.otf");
+}
+@font-face {
+  font-family: "Cabinet Grotesk";
+  font-weight: 700;
+  src: url("/src/fonts/CabinetGrotesk-Extrabold.otf");
+}
+@font-face {
+  font-family: "Cabinet Grotesk";
+  font-weight: 600;
+  src: url("/src/fonts/CabinetGrotesk-Bold.otf");
+}
+
+@font-face {
+  font-family: "Cabinet Grotesk";
+  font-weight: 500;
+  src: url("/src/fonts/CabinetGrotesk-Regular.otf");
+}
+@font-face {
+  font-family: "Cabinet Grotesk";
+  font-weight: 400;
+  src: url("/src/fonts/CabinetGrotesk-Light.otf");
+}
+@font-face {
+  font-family: "Cabinet Grotesk";
+  font-weight: 300;
+  src: url("/src/fonts/CabinetGrotesk-Medium.otf");
+}
+@font-face {
+  font-family: "Cabinet Grotesk";
+  font-weight: 200;
+  src: url("/src/fonts/CabinetGrotesk-Extralight.otf");
+}
+
+@font-face {
+  font-family: "Cabinet Grotesk";
+  font-weight: 100;
+  src: url("/src/fonts/CabinetGrotesk-Thin.otf");
+}
+
+.pg {
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.pgsemibold {
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.servtitle {
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 5.5rem;
+  line-height: 1.1;
+  color: #333;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.small {
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.1;
+  color: #333;
+}
+
+.bigtitle {
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 3.5rem;
+  line-height: 1.1;
+}
+
+.headdescription {
+  font-family: "Inconsolata", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1.1;
+}
+
+.name {
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.navbarname {
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-weight: 200;
+  font-size: 1.1rem;
+}
+.navbar {
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.smallbold {
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.prtitle {
+  color: #303030;
+  font-size: 3.125rem;
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-weight: 500;
+}
+.heading3 {
+  color: #303030;
+  text-align: left;
+  font-weight: 400;
+  font-family: "Cabinet Grotesk", sans-serif;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.description {
+  color: #303030;
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: "Cabinet Grotesk", sans-serif;
+}
+
+.drop-shadow {
+  --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.25));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
+    var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.descriptionbtn {
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: "Cabinet Grotesk", sans-serif;
+}
+.descriptionbold {
+  font-size: 1.25rem;
+  font-weight: 300;
+  font-family: "Cabinet Grotesk", sans-serif;
+}
+
+.semismall {
+  color: #303030;
+  font-size: 1.25rem;
+  font-family: "Inconsolata", sans-serif;
+  font-weight: 300;
+}
+
 .bgcolor {
   background: rgb(192, 180, 183);
   background: radial-gradient(
     circle,
     rgba(192, 180, 183, 1) 6%,
-    rgba(104, 104, 255, 1) 31%,
-    rgba(63, 83, 247, 1) 100%
+    rgba(64, 84, 247, 1) 31%,
+    rgb(64, 84, 247) 100%
   );
+}
+
+.bgpic {
+  background: #ececec;
 }
 
 #root {
@@ -162,4 +369,13 @@ span + span {
   100% {
     transform: scale(1);
   }
+}
+
+.curvibtn {
+  width: 11rem;
+  border: solid;
+  padding: 1rem;
+  background-color: white;
+  border-width: 2px;
+  border-radius: 0px 34px 0px 34px;
 }

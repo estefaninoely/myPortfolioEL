@@ -20,15 +20,17 @@ function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 w-full bg-transparent z-50 ${
-        scrollPosition > blurStartHeight ? "backdrop-blur" : ""
+        scrollPosition > blurStartHeight
+          ? "backdrop-blur-[10px] text-[#222]"
+          : "text-white"
       }`}
     >
-      <div className="flex justify-between items-center p-8 pl-28 pr-28">
+      <div className="flex justify-between items-center p-4 pl-28 pr-28">
         <div>
-          <div>Estefani Lopez</div>
-          <div>Web Developer</div>
+          <div className="name ">Estefani Lopez</div>
+          <div className="navbarname ">Web Developer</div>
         </div>
-        <div className="flex gap-12">
+        <div className="flex gap-12 navbar ">
           <div>
             {" "}
             <Link to="/">Services</Link>
