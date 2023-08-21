@@ -214,7 +214,7 @@ function AboutMe() {
           </div>
 
           <Link
-            to={"/coffeTable"}
+            to={"/contact"}
             className="flex bg-[#d4d7f8] p-4 w-[50%] items-center hover:bg-white hover:text-[#4054f7] justify-center text-[#4054f7] borderl border-black "
           >
             <svg

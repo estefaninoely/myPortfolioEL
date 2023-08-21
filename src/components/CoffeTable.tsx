@@ -17,7 +17,7 @@ function CoffeTable() {
   return (
     <div>
       <Nav />
-      <div className="p-20 bg-[#ececec]">
+      <div className="p-20 bg-[#ececec] pt-32">
         <div className="flex">
           <div className="mr-4">
             <img src={me} alt="" className="rounded-full w-24 h-24" />
