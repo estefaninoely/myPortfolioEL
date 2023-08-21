@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-function Navbar() {
+function Nav() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const blurStartHeight = 700;
 
@@ -22,14 +22,14 @@ function Navbar() {
       className={`fixed top-0 left-0 w-full bg-transparent z-50 ${
         scrollPosition > blurStartHeight
           ? "backdrop-blur-[20px] text-[#222]"
-          : "text-white"
+          : "text-[#222]"
       }`}
     >
       <div className="flex justify-between items-center p-4 pl-28 pr-28">
-        <div>
+        <Link to={"/"}>
           <div className="name ">Estefani Lopez</div>
           <div className="navbarname ">Web Developer</div>
-        </div>
+        </Link>
         <div className="flex gap-12 navbar ">
           <div>
             {" "}
@@ -49,4 +49,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Nav;

@@ -97,10 +97,50 @@
   font-size: 1.2rem;
   line-height: 1.5;
 }
+
+.pg1 {
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.about {
+  font-size: 3rem;
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.bordermw {
+  border-radius: 3rem 0rem 0rem 0rem;
+}
+
+.borderr {
+  border-radius: 0rem 0rem 0rem 1.4rem;
+  border-width: 1px;
+}
+.borderl {
+  border-radius: 0rem 0rem 1.4rem 0rem;
+  border-width: 1px;
+}
+
 .pgsemibold {
   font-family: "Cabinet Grotesk", sans-serif;
   font-weight: 300;
   font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.labels {
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #333;
+}
+.labelss {
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
   line-height: 1.5;
 }
 .servtitle {
@@ -171,6 +211,23 @@
   margin-bottom: 0.5rem;
   font-size: 2rem;
   line-height: 1.2;
+}
+.heading3white {
+  color: white;
+  text-align: left;
+  font-weight: 400;
+  font-family: "Cabinet Grotesk", sans-serif;
+
+  margin-bottom: 0.5rem;
+  font-size: 3.25rem;
+  line-height: 1.2;
+}
+
+.drop-shadow-3xl {
+  --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.3));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
+    var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .description {
@@ -378,4 +435,34 @@ span + span {
   background-color: white;
   border-width: 2px;
   border-radius: 0px 34px 0px 34px;
+}
+
+.zoom {
+  padding: 60px;
+  transition: transform 0.2s;
+  width: 200px;
+  height: 200px;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.5s ease-out;
 }

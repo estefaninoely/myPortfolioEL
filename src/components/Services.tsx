@@ -1,13 +1,34 @@
+import { useEffect, useState } from "react";
 import Media from "./Media";
 
+import Nav from "./Nav";
+
 function Services() {
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    // Delay the animation by a short duration (e.g., 300ms)
+    const timeout = setTimeout(() => {
+      setAnimate(true);
+    }, 2000);
+
+    return () => clearTimeout(timeout);
+  }, []);
+
   return (
     <div className="">
+      <Nav />
       <div className="pl-16 pr-16">
         <div>
           <div className="p-16">
             <div className="grid grid-cols-8 gap-10 justify-items-start">
-              <h1 className="servtitle grid col-span-5">Web Development</h1>
+              <h1
+                className={`servtitle grid col-span-5 ${
+                  animate ? "animate-fadeInUp" : ""
+                }`}
+              >
+                Web Development
+              </h1>
               <div className="grid col-start-3 col-span-5">
                 <p className="pg  mb-6 ">
                   I specialize in building responsive and user-friendly websites
@@ -39,7 +60,11 @@ function Services() {
           <div>
             <div className="p-16 pt-0">
               <div className="grid grid-cols-8 justify-items-end gap-10">
-                <h1 className="servtitle grid col-start-3 col-span-5">
+                <h1
+                  className={`servtitle grid col-start-3 col-span-5 ${
+                    animate ? "animate-fadeInUp" : ""
+                  }`}
+                >
                   Web Design
                 </h1>
                 <div className="grid col-start-2 col-span-4">

@@ -1,3 +1,6 @@
+import AboutMe from "../components/Aboutme";
+import CoffeTable from "../components/CoffeTable";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Portfolio from "../components/Portfolio";
 import Services from "../components/Services";
@@ -20,7 +23,7 @@ function Home() {
               Web Experiences and Applications With Modern Technologies
             </p>
             <div className="curvibtn flex justify-evenly items-center">
-              <a href="#" className="smallbold">
+              <a href="/contact" className="smallbold">
                 Contact me
               </a>
               <svg
@@ -42,8 +45,9 @@ function Home() {
         </div>
         <div className="bg-white h-[50rem] w-screen absolute top-[45rem]">
           <Services />
-
           <Portfolio />
+          <AboutMe />
+          <Footer />
         </div>
       </main>
     </>
