@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import Portfolio from "../components/Portfolio";
 import Services from "../components/Services";
 import memojie from "../images/memojie.png";
+import SkillsTolls from "../components/SkillsTolls";
 
 function Home() {
   return (
@@ -47,6 +48,7 @@ function Home() {
         <div className="bg-white h-[50rem] w-screen absolute top-[45rem]">
           <Services />
           <Portfolio />
+          <SkillsTolls />
           <AboutMe />
           <Footer />
         </div>
