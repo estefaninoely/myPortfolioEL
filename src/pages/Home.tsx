@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import AboutMe from "../components/Aboutme";
-import CoffeTable from "../components/CoffeTable";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Portfolio from "../components/Portfolio";
