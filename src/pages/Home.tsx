@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import AboutMe from "../components/Aboutme";
 import CoffeTable from "../components/CoffeTable";
 import Footer from "../components/Footer";
@@ -22,10 +23,11 @@ function Home() {
               I'm a Germany-Based Coder & Designer Web Developer Who Build Solid
               Web Experiences and Applications With Modern Technologies
             </p>
-            <div className="curvibtn flex justify-evenly items-center">
-              <a href="/contact" className="smallbold">
-                Contact me
-              </a>
+            <Link
+              to={"/contact"}
+              className="curvibtn flex justify-evenly items-center"
+            >
+              <p className="smallbold">Contact me</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -40,7 +42,7 @@ function Home() {
                   d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
                 />
               </svg>
-            </div>
+            </Link>
           </div>
         </div>
         <div className="bg-white h-[50rem] w-screen absolute top-[45rem]">
